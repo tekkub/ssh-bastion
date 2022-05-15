@@ -1,0 +1,8 @@
+version: "2"
+services:
+  ssh-client:
+    build: .
+    image: MYBUTT/ssh-client
+    external_links:
+      - nginx_nginx_1:nginx
+    restart: always

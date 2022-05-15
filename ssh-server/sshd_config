@@ -1,0 +1,10 @@
+
+LogLevel VERBOSE
+
+Compression no
+PrintMotd no
+
+ChallengeResponseAuthentication no
+PermitTTY no
+PasswordAuthentication no
+GatewayPorts yes

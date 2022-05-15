@@ -1,0 +1,8 @@
+Host remote
+  Hostname example.com
+  Port 34567
+  User user
+  RemoteForward 80 localhost:80
+  ServerAliveInterval 60
+  GatewayPorts true
+  ExitOnForwardFailure yes

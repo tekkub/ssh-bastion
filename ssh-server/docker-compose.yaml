@@ -1,0 +1,9 @@
+version: "2"
+services:
+  ssh-server:
+    build: .
+    image: MYBUTT/ssh-server
+    ports:
+      - "36666:22"
+      - "36789:80"
+    restart: always

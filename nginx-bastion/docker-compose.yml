@@ -1,0 +1,21 @@
+version: "2"
+networks:
+  ssh:
+    external:
+      name: sshserver_default
+services:
+  nginx:
+    build: .
+    image: MYBUTT/nginx
+    external_links:
+      - sshserver_ssh-server_1:ssh
+    networks:
+      - default
+      - ssh
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
+    volumes:
+      - /tmp/letsencrypt/www:/tmp/letsencrypt/www
+      - /etc/letsencrypt:/etc/letsencrypt
