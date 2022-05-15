@@ -8,4 +8,4 @@ Note that all of this hasn't been touched in ~5 years.  I no longer run the serv
 
 ssh-server was forked from https://github.com/chamunks/alpine-openssh with a few modifications
 
-Internal port numbers have been randomized, make sure to change them!
+Important port numbers have been randomized, make sure to change them!
